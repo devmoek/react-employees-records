@@ -7,7 +7,7 @@ const EmployeesList = ({data}) => {
         const {id, ...itemProps} = item;
 
         return (
-            // {...item} is the same as 'name={item.name} salary={item.salary}'
+            // {...itemProps} is the same as 'name={item.name} salary={item.salary}'
             <EmployeesListItem key={id} {...itemProps}/>
         )
     })
