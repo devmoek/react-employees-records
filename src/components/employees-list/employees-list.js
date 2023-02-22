@@ -6,7 +6,6 @@ const EmployeesList = ({data, onDelete, onToggleProp}) => {
     const elements = data.map(item => {
         const {id, ...itemProps} = item;
         return (
-            // {...itemProps} is the same as 'name={item.name} salary={item.salary}'
             <EmployeesListItem 
                 key={id} 
                 {...itemProps}
